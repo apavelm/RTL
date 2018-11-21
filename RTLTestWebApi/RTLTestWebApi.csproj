@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.1.1" />
+    <PackageReference Include="Refit" Version="4.6.48" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="4.6.48" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RTLTest.Services\RTLTest.Services.csproj" />
+    <ProjectReference Include="..\RTLTestTask.ApiModels\RTLTestTask.ApiModels.csproj" />
+    <ProjectReference Include="..\RTLTestTask.Db\RTLTestTask.Db.csproj" />
+    <ProjectReference Include="..\RTLTestTask.Models\RTLTestTask.Models.csproj" />
+  </ItemGroup>
+
+</Project>
